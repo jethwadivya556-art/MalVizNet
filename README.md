@@ -2,7 +2,7 @@
 
 Comparison of 12 CNN architectures for classifying malware into 25 families, using grayscale images of malware binaries (the Malimg dataset at 32×32). The best models reach about **94% test accuracy**. The project also documents what held accuracy back at first and what the dataset's limits are.
 
-![Test accuracy of the 12 architectures](results/accuracy_comparison_32x32.png)
+![Test accuracy of the 12 architectures](Results/accuracy_comparison_32x32.png)
 
 ## Overview
 
@@ -109,7 +109,7 @@ Three seeds (42, 43, 44) for M3, M8 and M4, chosen from an earlier run's validat
 - **Batch size has no consistent effect.** A check on M4 and M7 (3 seeds each) found validation differences of 0.3-0.45 points between batch 32 and 64, well inside the seed spread.
 - **BatchNorm models (M9-M11) trained unstably.** Validation accuracy swung widely between epochs, though the saved checkpoints behaved consistently on the test set. A high learning rate is my best guess; I did not confirm it.
 
-![Per-class recall and precision](results/per_class_32x32.png)
+![Per-class recall and precision](Results/per_class_32x32.png)
 
 ### Duplicate-leakage check
 
@@ -147,7 +147,7 @@ The first version of the notebook scored below 80%. Fixing these brought it to a
 
 ```
 malviznet-32x32.ipynb        # full notebook: data loading, training, evaluation
-results/
+Results/
   results_32x32.csv          # test results for all 12 models
   precision_recall_32x32.csv # weighted and macro precision / recall, all 12 models
   seed_runs_32x32.csv        # per-seed test results (M3, M8, M4)
