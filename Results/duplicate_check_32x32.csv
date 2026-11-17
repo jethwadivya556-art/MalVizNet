@@ -1,0 +1,4 @@
+Model,All_test,Has_train_copy,No_train_copy,Macro_F1_no_copy
+M3,94.504,100.0,92.923,0.807
+M8,94.433,100.0,92.831,0.822
+M4,94.076,100.0,92.371,0.805

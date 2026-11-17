@@ -1,0 +1,6 @@
+,Test_acc,Test_acc,Test_acc,Test_acc,Macro_F1,Macro_F1,Macro_F1,Macro_F1,Weighted_F1,Weighted_F1,Weighted_F1,Weighted_F1
+,mean,std,min,max,mean,std,min,max,mean,std,min,max
+Model,,,,,,,,,,,,
+M3,93.814,0.959,92.719,94.504,0.888,0.012,0.875,0.895,0.935,0.01,0.923,0.941
+M4,93.909,0.149,93.79,94.076,0.899,0.004,0.895,0.903,0.938,0.0,0.937,0.938
+M8,94.266,0.18,94.076,94.433,0.901,0.008,0.893,0.907,0.94,0.002,0.938,0.942
